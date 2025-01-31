@@ -1,4 +1,4 @@
-I have created a a CNN that closelsy resembles the TinyVGG architecture. After training, it achieves 98.7% accuracy on test set and 99.02% accuracy on training set. 
+I have created a a CNN that closely resembles the TinyVGG architecture. After training, it achieves 98.7% accuracy on test set and 99.02% accuracy on training set. 
 
 In order to use it, install all the dependencies listed in requirements.txt. 
 
