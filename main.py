@@ -20,15 +20,10 @@ def main():
     if len(sys.argv) != 3:
         raise Exception("Usage: python* <model> <image>")
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    cnn_model = MNIST_CNN(1, 10, 10).to(device)
+    cnn_model = MNIST_CNN(1, 20, 10).to(device)
     cnn_model.load_state_dict(torch.load(sys.argv[1]))
     prediction_idx = predict_image(cnn_model, sys.argv[2]).item()
     print(f"The number in the picture is {class_names[prediction_idx]}")
-    
-    
-    
-    
-
 
 if __name__=="__main__":
     main()
