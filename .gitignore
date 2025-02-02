@@ -1,5 +1,7 @@
 venv/
 data/
-model/
+models/
 __pycache__/
 .DS_Store
+*.jpeg
+*.ttf
