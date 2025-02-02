@@ -1,16 +1,21 @@
-I have created a a CNN that closely resembles the TinyVGG architecture. After training, it achieves 98.7% accuracy on test set and 99.02% accuracy on training set. 
+The MIT License (MIT)
 
-In order to use it, install all the dependencies listed in requirements.txt. 
+Copyright (c) 2011-2025 The Bootstrap Authors
 
-Steps: 
-<li> Create, train and save the model using model.ipynb notebook.
-<li> Download a picture of handwritten digit (yours or from internet - up to you).
-<li> Run the main.py script by executing "python@ model.py (saved_model_path) (image_path)" where @ is the python version you are using. 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-I updated the model to train for 20 epochs, have 20 units per hidden layer, and made the predictions more robust thanks to augmenting data before testing. 
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-I also added two directories "black_backg" and "white_backg" with handwritten by me digits on black and white backgrounds respectively for the sake of playing around with the model on external data (that is not part of the MNIST dataset).
-
-PS From what I know PyTorch works best with python version up to and including 3.12, some dependencies are not supported for 3.13 afaik.
-
-Have fun!
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
