@@ -2,6 +2,7 @@ import torch
 import torchvision
 from torchvision import transforms
 from pathlib import Path
+from model import MNIST_CNN
 
 def transform_image(image_path):
     device = "mps" if torch.backends.mps.is_available() else "cpu"
@@ -27,3 +28,9 @@ def predict_image(model, image_path):
         pred = model(image)
         pred = torch.argmax(torch.softmax(pred, dim=1))
         return pred
+
+def setup_model(model_path):
+    device = "mps" if torch.backends.mps.is_available() else "cpu"
+    cnn_model = MNIST_CNN(1, 20, 10).to(device)
+    cnn_model.load_state_dict(torch.load(model_path))
+    return cnn_model
